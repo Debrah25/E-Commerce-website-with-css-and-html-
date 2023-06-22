@@ -1,0 +1,861 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Merienda:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Inconsolata', monospace;
+    border:none;
+    outline:none;
+    scroll-behavior:smooth;
+    text-decoration:none;
+    font-weight: 600;
+    
+}
+#headings{
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+#header{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(82, 31, 31, 0.967);
+    box-shadow: 2px 8px 5px;
+    position:sticky;
+    top:0;
+    left:0;
+    
+    
+
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    list-style: none;
+    padding: 20px;
+    width: 40%;
+    height: 100px;
+
+}
+#navbar li{
+    padding: 18px;
+    font-size:20px ;
+    font-weight:650;
+    color:black;  
+    transition: 0.3s ease;
+    position: relative;
+
+}
+#navbar li a:hover
+#navbar li a.active{
+    color: rgb(9, 9, 4);
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 20%;
+    height: 2px;
+    background-color: rgb(233, 233, 233);
+    position: absolute;
+    bottom: -1px;
+    left: 20px;
+
+}
+#navbar a{
+    color: black;
+}
+
+
+#hero{
+    background-image: url("Images\\freestocks-_3Q3tsJ01nc-unsplash.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size:cover;
+    background-position: top 40% right 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: top;
+    padding: 60px 100px 60px 90px;
+    font-size: 28px;
+}
+#hero h4{padding-bottom: 15px; 
+    font-weight: bold;
+
+}
+#hero h2{
+    font-weight: bolder;
+}
+#hero h1{
+    font-weight: bolder;
+    color: rgb(65, 156, 156);
+}
+#hero button{
+    background-image: url("Images\\geordanna-cordero-5NE6mX0WVfQ-unsplash.jpg");
+    background-color: transparent;
+    border: 20px;
+    border-radius: 20px;
+    color: rgb(177, 36, 126);
+    padding: 10px 15px 14px 15px;
+    font-weight: bolder;
+    margin-top: 11px;
+}
+#hero p{
+    color: #7f8484;
+    
+}
+.section-p1{
+    padding: 10px 15px 5px;
+}
+#feature{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+#feature .fe-box{
+    background-image: url("Images\\Shop logo, Good Shop Logo stock vector_ Illustration of design - 181591334 .jpg");
+    width: 180px;
+    height: 200px;
+    text-align: center;
+    padding: -5px -5px;
+    box-shadow: 10px 20px 14px rgb(190, 190, 187);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 40px;
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 70px    rgb(128, 128, 127);
+}
+#feature .fe-box h5{
+    font-size: 17px;
+    padding-top: 170px;
+    line-height: 1;
+    font-weight: 700;
+}
+#feature .fe-box1{
+    background-image: url("Images\\Bag Shop Logo Vector Design Images, Shopping Logo With The Bag Phone, Online, Shopping, Logo PNG Image For Free Download .jpg");
+    width: 180px;
+    height: 200px;
+    text-align: center;
+    padding: -5px -5px;
+    box-shadow: 10px 20px 14px rgb(190, 190, 187);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 40px;
+
+}
+#feature .fe-box1:hover{
+    box-shadow: 10px 10px 70px    rgb(128, 128, 127);
+
+}
+#feature .fe-box1 h5{
+    font-size: 17px;
+    padding-top: 170px;
+    line-height: 1;
+    font-weight: 700;
+
+}
+
+#feature .fe-box2{
+    background-image: url("Images\\Special Discount Offer Vector Design Images, Sales Discount Icon  Special Offer Price  20 Percent   Vector, Sales Icons, Icons Icons, Price Icons PNG Image For Free Download.jpg");
+    width: 180px;
+    height: 200px;
+    text-align: center;
+    padding: -5px -5px;
+    box-shadow: 10px 20px 14px rgb(190, 190, 187);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 40px;
+
+}
+#feature .fe-box2:hover{
+    box-shadow: 10px 10px 70px    rgb(128, 128, 127);
+}
+#feature .fe-box2 h5{
+    font-size: 17px;
+    padding-top: 170px;
+    line-height: 1;
+    font-weight: 700;
+
+}
+#feature .fe-box3{
+    background-image: url("Images\\QuickBooks Payroll Technical Support 1-844-397-7462 Helpline Number.jpg");
+    min-width: 120px;
+    width: 180px;
+    height: 200px;
+    text-align: center;
+    padding: -5px -5px;
+    box-shadow: 10px 20px 14px rgb(190, 190, 187);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 40px;
+   
+
+}
+#feature .fe-box3:hover{
+    box-shadow: 10px 10px 70px    rgb(128, 128, 127);
+}
+#feature .fe-box3 h5{
+    font-size: 17px;
+    padding-top: 170px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+
+/*Products Section */
+
+#ProductsFeatures{
+    text-align: center; 
+    padding: 10px 15px 5px;
+
+}
+#ProductsFeatures .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+
+}
+#ProductsFeatures .imagebox{width: 30%;
+    min-width: 250px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius:10px;
+    margin-top: 30px;
+    box-shadow: 20px 20px 20px rgb(68, 49, 49);
+    
+
+
+}#ProductsFeatures .imagebox img{
+    width: 100%;
+    height: 28vh;
+    border-radius:10px;
+}
+#ProductsFeatures .imagebox:hover{
+    box-shadow: 20px 20px 20px rgb(68, 49, 49);
+    margin: 20px 0;
+    transition: 0.2s ease;
+    
+
+}
+#ProductsFeatures h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    
+}
+#ProductsFeatures h6{
+    font-size: 12px;
+    font-weight: light;
+    color: gray; 
+}
+#ProductsFeatures .produ-des{
+  text-align: start;  
+  padding: 10px 0;
+}
+#ProductsFeatures .produ-des p{
+    color: rgb(115, 115, 165);
+    font-weight: bold;
+}
+#ProductsFeatures .produ-des h4{
+    font-weight: bold;
+}
+#ProductsFeatures .produ-des .ratings{
+    color: rgb(228, 228, 6);
+}
+#ProductsFeatures .produ-des .ratings h1{
+    color: black;
+    font-size: 20px;
+    padding-left: 150px;
+    padding-top: 10px;
+    font-weight: 500;
+}
+#ProductsFeatures .produ-des .ratings .cart{
+    margin-top: -25px;
+    padding-left: 8px;
+    width: 40px;
+    height: 40px;
+    line-height: 60px;
+    border-radius:50px ;
+    background-color: aquamarine;
+    font-weight: bold;
+
+}
+#ProductsFeatures .imagebox{
+    height: 50vh;
+    
+}
+
+#banner{
+    background-image: url("Images\\Mi propio Arte!!!.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+#banner .but-on{
+    
+    width: 18vh;
+    height: 6.5vh;
+    background-color: white;
+    border-radius:15px;
+    border: none;
+    box-shadow: 10px 20px 15px rgb(67, 56, 56);
+    transition: 0.3s ;
+
+
+}
+#banner .but-on:hover{
+    background: rgb(79, 89, 181);
+    color: azure;
+
+}
+#banner h3{
+    font-size: 25px;
+    color: aliceblue;
+}
+#banner h5{
+    color: white;
+    font-size: 45px;
+
+}
+#banner h5 span{
+    color: red;
+
+}
+
+#New-Arrival{
+    text-align: center;
+    padding-top: 39px;
+
+}
+
+#New-Arrival .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px;
+    padding-top: -0px;
+    flex-wrap: wrap;
+
+
+}
+#New-Arrival .Arrivalbox{
+    width: 30%;
+    min-width: 250px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius:10px;
+    margin-top: 30px;
+    box-shadow: 20px 20px 20px rgb(68, 49, 49);   
+}
+#New-Arrival .Arrivalbox:hover{
+    box-shadow: 20px 20px 20px rgb(68, 49, 49);
+    margin: 20px 0;
+    transition: 0.2s ease;    
+}
+
+#New-Arrival img{
+    width: 100%;
+    height: 33vh;
+    border-radius:10px;
+}
+
+#New-Arrival h3{
+    font-size: 50px;
+
+}
+#New-Arrival h1{
+    font-size: 15px;
+    color: aqua;
+
+}
+#New-Arrival .Arrivalbox p{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0px 5px;
+
+}
+#New-Arrival .Arrivalbox h5{
+    display: flex;
+    justify-content: flex-start;
+}
+#New-Arrival .Arrivalbox .stars{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+
+
+
+
+
+
+.container-ban{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 10px 15px 5px;
+   
+    
+}
+
+#sm-banner div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image:url("Images\\loiusvi.jpg");
+    min-width: 580px;
+    height: 30vh;
+    width: 100%;
+    background-size:cover;
+    background-position:center;
+    color: white;
+    padding: 10px 25px 15px;
+     
+}
+#sm-banner div h3{
+    font-size: 15px;
+    padding: 10px 25px 15px;
+}
+#sm-banner div h1{
+    font-size: 30px;
+
+
+}
+#sm-banner div p{
+    font-size: 10px;
+    color: aqua;
+    padding: 10px 25px 15px;
+
+}
+#sm-banner div button{
+    width: 130px;
+    height: 40px;
+    border: 1px dashed rgb(0, 0, 0);
+    padding: 10px 25px 15px;
+     
+}
+#sm-banner div button:hover{
+    background-color: aquamarine;
+    transition: 0.3s;
+}
+
+
+
+
+
+#bannerbox2 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:end;
+    background-image:url("Images\\b0d54fe5-2397-454e-b343-c30d93c935bc.jpg");
+    min-width: 580px;
+    height: 30vh;
+    width: 100%;
+    background-size:cover;
+    background-position:center;
+    padding: 10px 25px 15px;
+   
+}
+
+
+
+#bannerbox2 div h3{ font-size: 15px;
+    padding: 10px 25px 15px;
+    color: rgb(255, 255, 255);
+
+}
+#bannerbox2 div h1{ font-size: 30px;
+    color: rgb(255, 255, 255);
+
+}
+#bannerbox2 div p{font-size: 10px;
+    padding: 10px 25px 15px;
+
+
+}
+#bannerbox2 button{ width: 130px;
+    height: 40px;
+    border: 1px dashed rgb(0, 0, 0);
+    
+}
+#bannerbox2 button p{
+    
+    font-size: 13px;
+    color: black;
+}
+#bannerbox2 button :hover{background-color: aquamarine;
+    transition: 0.3s;
+
+}
+   
+
+
+
+
+
+
+
+
+
+.Banner2-Cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 10px 15px 5px;
+   
+   
+
+}
+#bannerbox3 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:url("Images\\Dior Book Bag Is Still Trending.jpg");
+    min-width: 10px;
+    width: 100%;
+    height: 30vh;
+    background-size:cover;
+    background-position:cover;
+    padding: 10px 25px 15px;
+   
+}
+
+
+
+#bannerbox3 div h3{ font-size: 20px;
+    padding: 10px 25px 15px;
+    color: rgb(0, 0, 0);
+   
+    
+
+}
+#bannerbox3 div h1{ font-size: 20px;
+    color: rgb(0, 0, 0);
+    padding: 10px 25px 15px;
+    padding-bottom:100px;
+    align-items: start;
+
+}
+#bannerbox3 div p{font-size: 10px;
+    padding: 10px 25px 15px;
+
+
+}
+#bannerbox3 button{ width: 130px;
+    height: 40px;
+    border: 1px dashed rgb(0, 0, 0);
+    
+}
+#bannerbox3 button p{
+    
+    font-size: 13px;
+    color: black;
+}
+#bannerbox3 button :hover{background-color: aquamarine;
+    transition: 0.3s;
+
+}
+
+
+
+
+#bannerbox4 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:url("Images\\New Arrival Bags LUV 289 - Style 1 _ 25_19_9cm.jpg");
+    min-width: 20px;
+    width: 100%;
+    height: 30vh;
+    background-size:cover;
+    background-position:center;
+    padding-bottom: -20px; 
+    padding-left: 60px;
+}
+
+
+
+#bannerbox4 div h3{ font-size: 25px;
+    padding: 10px 25px 15px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+
+}
+#bannerbox4 div h1{ font-size: 25px;
+    color: rgb(0, 0, 0);
+
+}
+#bannerbox4 div p{
+    font-size: 10px;
+    padding: 10px 25px 15px;
+
+
+}
+#bannerbox4 button{ width: 130px;
+    height: 40px;
+    border: 1px dashed rgb(0, 0, 0);
+    
+}
+#bannerbox4 button p{
+    
+    font-size: 13px;
+    color: black;
+}
+#bannerbox4 button :hover{background-color: aquamarine;
+    transition: 0.3s;
+
+}
+
+
+
+
+#bannerbox5 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:url("Images\\Men's Casual High-Top Winter Breathable Sports Sneaker Shoes White _ 43.jpg");
+    min-width: 150px;
+    width: 100%;
+    height: 30vh;
+    background-size:cover;
+    background-position:cover;
+    padding: 10px 25px 15px;
+   
+}
+
+
+
+#bannerbox5 div h3{ font-size: 15px;
+    padding: 10px 25px 15px;
+    color: rgb(0, 0, 0);
+
+}
+#bannerbox5 div h1{ font-size: 30px;
+    color: rgb(0, 0, 0);
+
+}
+#bannerbox5 div p{font-size: 10px;
+    padding: 10px 25px 15px;
+
+
+}
+#bannerbox5 button{ width: 130px;
+    height: 40px;
+    border: 1px dashed rgb(0, 0, 0);
+    
+}
+#bannerbox5 button p{
+    
+    font-size: 13px;
+    color: black;
+}
+#bannerbox5 button :hover{
+    background-color: aquamarine;
+    transition: 0.3s;
+}
+
+
+#newsletter{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    background-color: rgba(82, 31, 31, 0.967);
+    height: 25vh;
+    min-height: 180px;
+    
+    
+}
+
+#newsletter .newstext{
+    display: flex;
+    flex-direction: column;  
+    margin-top: 45px;
+    padding-left: 20px;
+}
+#newsletter .newstext h4{
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+#newsletter .newstext span{
+    color: yellow;
+}
+#newsletter .form input{
+    width: 28vh;
+    margin-top: 10vh;
+    margin-right: 0vh;
+    height: 27px;
+    border:1px solid black;
+    border-radius: 10px;
+    
+}
+#newsletter .form button{
+    margin-right: 20vh;
+    height: 4vh;
+    background-color:yellow ;
+    width: 70px;
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    
+}
+#newsletter.form button:hover{
+    transition: 0.4s;
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+
+
+#aboutbanner{
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+
+.section-p1 .col img{
+    width: 10vh;
+    height: 5vh;
+}
+
+
+
+.section-p1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-p1 .social-media{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    
+}
+.section-p1 .section-p2{
+    padding-bottom:110px;
+}
+.section-p1 .section-p2 p{
+    padding:5px 10px 5px;
+    
+}
+.section-p1 .section-p2 h1{
+    padding-bottom: 60px;
+}
+.tag{
+    color: gray;
+    font-size: 10px;
+    font-weight: 400;
+}
+.section-p1 .col{
+    padding-bottom:60px;
+}
+.section-p1 .col h1{
+    font-size: 25px;
+    padding-bottom:50px;
+}
+.section-p1 .col p{
+    padding:5px 10px 5px;
+}
+.section-p1 .section-p3{
+    padding-bottom: 90px;
+    
+}
+.section-p1 .section-p3 h1{
+    padding-bottom: 50px;
+}
+.section-p1 .section-p3 p{
+    padding:5px 10px 5px;
+
+}
+.section-p1 .section-p4{
+    padding-bottom: 60px;
+
+}
+.section-p1 .section-p4 .visas{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    
+}
+.section-p1 .section-p4 h1{
+    padding-bottom:70px ;
+}
+.section-p1 .section-p4 p{
+    padding:5px 10px 5px;
+    margin-top: 10px;
+}
+
+.section-p1 .section-p4 p i{
+    margin-right: 10px;
+}
+.section-p1 .section-p4  p{
+border: 1.5px solid black;
+border-radius: 5px;
+width: 20rvh;
+display: flex;
+align-items: center;
+}
+.section-p1 .section-p4 h5{
+    border: 1.5px solid black;
+    border-radius: 5px; 
+    padding:5px 10px 5px; 
+    margin-top: 10px
+}
+.section-p1 .section-p4 h5 i{
+    margin-right: 10px;
+}
+.section-p1 .section-p4 h3{
+    margin-top: 10px;
+}
+.section-p1 .section-p4 h4{
+    margin-bottom: 10PX;
+}
+
+@media (max-width:799px) {
+    #navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        list-style: none;
+        padding: 20px;
+        width: 40%;
+        height: 100px;
+    }
+}
